@@ -33,7 +33,7 @@ class FieldLevelEncryptionTest extends TestCase {
         $payload = FieldLevelEncryption::decryptPayload($encryptedPayload, $config, $params);
 
         // THEN
-        $this->assertTrue(StringUtils::contains($payload, 'account'));
+        $this->assertTrue(StringUtils::contains($payload, 'account'));AAA
     }
 
     public function testEncryptPayload_Nominal() {
